@@ -1,0 +1,134 @@
+/* Global Styles */
+
+* {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, .post-category {
+    font-family: 'Spectral', serif;
+    line-height: 120%;
+}
+
+p, #post-info, li, footer {
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: #006DFE;
+}
+
+/* Header Section */
+
+header {
+    background-color: #006DFE;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Main Section */
+
+main {
+    max-width: 570px;
+    margin: auto;
+
+    figure {
+        text-align: center;
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    article {
+        h1 {
+            margin: 10px 0 14px 0;
+            font-size: 36px;
+            
+        }
+
+        h2, {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .text-emphasis {
+            font-weight: 600;
+        }
+
+        .post-category {
+            color: #006DFE;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        #post-info {
+            color: #C1C1C1;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+    }
+
+    #related-posts {
+        margin-bottom: 40px;
+        background-color: #F1F1F1;
+        padding: 20px;
+        text-decoration: none;
+
+        h4 {
+            font-size: 12px;
+            font-weight: normal;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                font-size: 16px;
+                margin-bottom: 6px;
+            }   
+        }
+    
+    }
+}
+
+/* Footer Section */
+
+footer {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 856px;
+    margin: auto;
+    padding: 20px 0;
+    border-top: 1px solid #C1C1C1;
+}
