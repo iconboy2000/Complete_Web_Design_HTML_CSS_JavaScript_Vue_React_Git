@@ -237,13 +237,12 @@ section.best-sellers .product-slider .product h5 {
     line-height: 30px;
     color: #33C6DD;
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 section.best-sellers .product-slider .product h4 {
     font-size: 20px;
     font-weight: 400;
-    line-height: 26px;
     color: #000000;
     margin-top: 0;
     margin-bottom: 10px;
@@ -259,21 +258,22 @@ section.best-sellers .product-slider .product .price {
 
 section.best-sellers .product-slider .product .price h3 {
     font-size: 28px;
-    font-weight: 700;
     line-height: 30px;
+    font-weight: 700;
     color: #000000;
     margin-top: 0;
     margin-bottom: 0px;
 }
 
 section.best-sellers .product-slider .product .price.discount h3 {
+    font-size: 28px;
+    line-height: 30px;
     color: #EC1C1C;
 }
 
 section.best-sellers .product-slider .product .price span.original-price {
     margin: 0 10px;
     font-size: 16px;
-    line-height: 24px;
     color: #9B9B9B;
     text-decoration: line-through;
 }
@@ -349,7 +349,7 @@ section.newsletter button[type=submit] {
     border: 1px solid #614DC9;
     font-weight: 400;
     font-size: 14px;
-    line-height: 21px;
+    line-height: 20px;
     color: #FFFFFF;
     text-transform: uppercase;
 }
@@ -448,6 +448,114 @@ section.copyrights {
         height: 50px;
         font-size: 14px;
     }
+
+    section.best-sellers {
+    padding-top: 70px;
+}
+
+    section.best-sellers h2 {
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 16px;
+    }
+
+    section.best-sellers hr {
+        margin-bottom: 70px;
+    }
+
+    section.best-sellers .product-slider .product h5 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    section.best-sellers .product-slider .product h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    section.best-sellers .product-slider .product .price {
+        margin-bottom: 10px;
+    }
+
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 24px;
+    }
+
+    section.best-sellers .product-slider .product .price.discount h3 {
+        font-size: 24px;
+    }
+
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 14px;
+    }
+
+    section.best-sellers .product-slider .product button {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    section.newsletter {
+        width: 880px;
+        margin: 70px auto;
+        padding: 50px 0;
+    }
+
+    section.newsletter h3 {
+        font-size: 22px;
+    }
+
+    section.newsletter p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    section.newsletter input[type=email] {
+        height: 46px;
+        padding: 24px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.newsletter button[type=submit] {
+        height: 50px;
+        padding: 0 36px;
+        font-size: 12px;
+    }
+
+    section.newsletter button[type=submit]:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #000000;
+        color: #614DC9;
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 50px 0;
+    }
+
+    footer .container {
+        width: 1180px;
+        max-width: 90%;
+    }
+
+    footer ul li.list-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    footer ul li {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    section.copyrights {
+        padding: 14px 0;
+        font-size: 14px;
+        line-height: 22px;
+    }
 }
 
 /* Styles for Tablet */
@@ -456,6 +564,91 @@ section.copyrights {
         width: 92%;
         max-width: 92%;
     }
+
+    section.hero h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    section.hero p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    section.hero button {
+        font-size: 14px;
+    }
+
+    section.best-sellers {
+        padding-top: 44px;
+    }
+
+    section.best-sellers h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+        line-height: 38px;
+    }
+
+    section.best-sellers hr {
+        width: 66px;
+        height: 6px;
+        margin-bottom: 48px;
+    }
+
+    section.best-sellers .product-slider .product {
+        padding: 22px;
+    }
+
+    section.best-sellers .product-slider .product.new::before {
+        top: 6px;
+        right: 6px;
+        padding: 5px 14px;
+        font-size: 11px;
+    }
+
+    section.best-sellers .product-slider .product-info {
+        margin-top: 30px;
+    }
+
+    section.best-sellers .product-slider .product h5 {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    section.best-sellers .product-slider .product h4 {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 16px;
+    }
+
+    section.best-sellers .product-slider .product .price.discount h3 {
+        font-size: 16px;
+    }
+
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 9px;
+    }
+
+    section.best-sellers .product-slider .product button {
+        width: 146x;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.newsletter {
+        width: 100%;
+        margin: 48px auto;
+    }
+
+    footer .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
 }
 
 /* Styles for Mobile */
@@ -464,4 +657,5 @@ section.copyrights {
         width: 92%;
         max-width: 92%;
     }
+
 }
