@@ -37,7 +37,11 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    margin-right: 26px;
+    margin-left: 26px;
+}
+
+header nav ul li.menu-icon {
+    display: none;
 }
 
 /* pseudo-class(가상 클래스) 
@@ -57,8 +61,8 @@ header nav ul li {
         background-color: blue; <- 버튼에 마우스를 올리면 파란색으로 변함
         }
 */
-header nav ul li:last-of-type {
-    margin-right: 0;
+header nav ul li:first-of-type {
+    margin-left: 0;
 }
 
 header nav ul li a {
@@ -563,6 +567,14 @@ section.copyrights {
     .container {
         width: 92%;
         max-width: 92%;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+        display: inline-block;
     }
 
     section.hero h1 {
