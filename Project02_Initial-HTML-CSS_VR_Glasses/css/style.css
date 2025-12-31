@@ -451,7 +451,7 @@ section.copyrights {
 
     section.best-sellers {
     padding-top: 70px;
-}
+    }
 
     section.best-sellers h2 {
         font-size: 34px;
@@ -654,6 +654,90 @@ section.copyrights {
 /* Styles for Mobile */
 @media screen and (max-width: 576px) {
     .container {
+        width: 92%;
+        max-width: 92%;
+    }
+
+    section.hero h1 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+
+    section.hero p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    section.hero button {
+        font-size: 14px;
+    }
+
+    section.best-sellers {
+        padding-top: 44px;
+    }
+
+    section.best-sellers h2 {
+        font-size: 28px;
+        margin-bottom: 12px;
+        line-height: 38px;
+    }
+
+    section.best-sellers hr {
+        width: 66px;
+        height: 6px;
+        margin-bottom: 48px;
+    }
+
+    section.best-sellers .product-slider .product {
+        padding: 22px;
+    }
+
+    section.best-sellers .product-slider .product.new::before {
+        top: 6px;
+        right: 6px;
+        padding: 5px 14px;
+        font-size: 11px;
+    }
+
+    section.best-sellers .product-slider .product-info {
+        margin-top: 30px;
+    }
+
+    section.best-sellers .product-slider .product h5 {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    section.best-sellers .product-slider .product h4 {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+    
+    section.best-sellers .product-slider .product .price h3 {
+        font-size: 16px;
+    }
+
+    section.best-sellers .product-slider .product .price.discount h3 {
+        font-size: 16px;
+    }
+
+    section.best-sellers .product-slider .product .price span.original-price {
+        font-size: 9px;
+    }
+
+    section.best-sellers .product-slider .product button {
+        width: 146x;
+        height: 36px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    section.newsletter {
+        width: 100%;
+        margin: 48px auto;
+    }
+
+    footer .container {
         width: 92%;
         max-width: 92%;
     }
