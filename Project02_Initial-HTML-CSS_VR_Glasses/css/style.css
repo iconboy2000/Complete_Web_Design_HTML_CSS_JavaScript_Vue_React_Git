@@ -730,7 +730,13 @@ section.copyrights {
     section.best-sellers .product-slider .product:last-of-type {
           margin-bottom: 0px;
     }
-
+    /* 모든 자식 요소(flex items) 아이템이 부모 컨테이너의 너비를 초과할 때 다음 줄로 넘기기 위해서 사용.
+       레이아웃이 화면 크기에 따라 유연하게 줄 바꿈이 되어야 한다면 flex-wrap: wrap;을 추가하고,
+       무조건 한 줄에 고정하고 싶다면 생략하면 됩니다. (flex-wrap 속성의 기본값은 nowrap)
+       flex-wrap: wrap을 설정하면 align-content 속성을 사용할 수 있게 됩니다.
+       align-content: 여러 줄이 생겼을 때, 그 줄들 사이의 간격을 조절하는 속성입니다. 
+       (flex-wrap: nowrap 상태에서는 작동하지 않습니다.)
+    */
     section.best-sellers .product-slider .container {
         flex-wrap: wrap;
     }
