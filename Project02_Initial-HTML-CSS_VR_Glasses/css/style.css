@@ -670,88 +670,122 @@ section.copyrights {
         max-width: 92%;
     }
 
+    header section.logo {
+        font-size: 18px;
+    }
+
+    /* 이전 선언 재정의: 
+    position:initial의 주요 사용 예는 요소의 위치가 
+    상대(relative), 절대(absolute), 절대고정(fixed) 또는 조건고정(sticky)으로 
+    변경된 후 기본 상태로 되돌리는 것입니다.
+    position:initial은 position: static과 동일한 효과를 가집니다.
+    모든 HTML 요소의 기본위치 속성 값은 static입니다. */
+    section.hero .hero-content {
+        position: initial;
+        text-align: center;
+    }
+
+    section.hero .hero-content .container {
+        align-items: center;
+        margin-top: 26px;  
+    }
+
+    section.hero h1,
+    section.hero p {
+        margin-bottom: 32px;
+    }
+
     section.hero h1 {
-        font-size: 40px;
-        line-height: 46px;
+        font-size: 32x;
+        line-height: 38px;
+        color: black;
     }
 
     section.hero p {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    section.hero button {
-        font-size: 14px;
+        display: none;
     }
 
     section.best-sellers {
-        padding-top: 44px;
+        padding-top: 64px;
     }
 
     section.best-sellers h2 {
-        font-size: 28px;
-        margin-bottom: 12px;
+        font-size: 24px;
         line-height: 38px;
+        margin-bottom: 14px;
     }
 
     section.best-sellers hr {
-        width: 66px;
-        height: 6px;
-        margin-bottom: 48px;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 42px;
     }
 
     section.best-sellers .product-slider .product {
-        padding: 22px;
+        width: 100%;
+        padding: 40px;
+        margin-bottom: 24px;
     }
 
-    section.best-sellers .product-slider .product.new::before {
-        top: 6px;
-        right: 6px;
-        padding: 5px 14px;
-        font-size: 11px;
+    section.best-sellers .product-slider .product:last-of-type {
+          margin-bottom: 0px;
     }
 
-    section.best-sellers .product-slider .product-info {
-        margin-top: 30px;
-    }
-
-    section.best-sellers .product-slider .product h5 {
-        font-size: 11px;
-        margin-bottom: 5px;
+    section.best-sellers .product-slider .container {
+        flex-wrap: wrap;
     }
 
     section.best-sellers .product-slider .product h4 {
-        font-size: 13px;
-        margin-bottom: 6px;
+        font-size: 14px;
+        margin-bottom: 8px;
     }
     
     section.best-sellers .product-slider .product .price h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     section.best-sellers .product-slider .product .price.discount h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     section.best-sellers .product-slider .product .price span.original-price {
-        font-size: 9px;
+        font-size: 11px;
     }
 
     section.best-sellers .product-slider .product button {
-        width: 146x;
+        width: 190px;
+        max-width: 100%;
         height: 36px;
         font-size: 12px;
         line-height: 18px;
     }
 
     section.newsletter {
-        width: 100%;
-        margin: 48px auto;
+        margin: 64px auto;
+        padding: 44px 0;
+    }
+
+    section.newsletter input[type=email] {
+        width: 210px;
+    }
+
+    section.newsletter button[type=submit] {
+        padding: 0 20px;
     }
 
     footer .container {
-        width: 92%;
-        max-width: 92%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer ul {
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    footer ul:last-of-type {
+        margin-bottom: 0px;
     }
 
 }
