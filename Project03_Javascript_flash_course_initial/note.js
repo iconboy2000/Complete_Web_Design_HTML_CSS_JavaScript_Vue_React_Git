@@ -1,3 +1,6 @@
+// DOM(Document Object Model) 조작 
+
+// id로 접근 (유일한 값, 하나의 요소만 반환)
 document.getElementById("greeting").innerHTML = "Hello World!";
 
 // class name으로 접근 array 형태로 반환 (length, index 접근 가능)
@@ -48,12 +51,14 @@ document.querySelector("#close-nav-menu").addEventListener("click", function() {
 });
 
 // Variables Scope 
+
 // 1. var는 왜 '동네방네' 다 알게 될까요? (전역 변수)
-// var로 변수를 만드는 것은 "동네 확성기"로 이름을 부르는 것과 비슷해요.
-// 설명 : var는 아주 옛날 방식의 이름표예요. 집 안(함수 안)에서 만들지 않고 밖에서 만들면, 프로그램 어디에서든 이 이름을 쓸 수 있게 돼요. 
-// 이걸 '전역 변수'라고 해요.
-// 문제점 : 너무 많은 사람이 같은 이름을 쓰면 헷갈리겠죠? 
-// var는 실수로 같은 이름을 또 써도 "안 돼!"라고 말해주지 않아서 나중에 큰 사고가 날 수 있어요.
+
+    // var로 변수를 만드는 것은 "동네 확성기"로 이름을 부르는 것과 비슷해요.
+    // 설명 : var는 아주 옛날 방식의 이름표예요. 집 안(함수 안)에서 만들지 않고 밖에서 만들면, 프로그램 어디에서든 이 이름을 쓸 수 있게 돼요. 
+    // 이걸 '전역 변수'라고 해요.
+    // 문제점 : 너무 많은 사람이 같은 이름을 쓰면 헷갈리겠죠? 
+    // var는 실수로 같은 이름을 또 써도 "안 돼!"라고 말해주지 않아서 나중에 큰 사고가 날 수 있어요.
 
 var 내사과 = 5; // 어디서든 보이는 전역 변수 
 
@@ -64,9 +69,10 @@ if (true) {
 console.log(내사과); // 5가 아니라 10이 나와요. (위험해요!)
 
 // 2. var vs let vs const 한눈에 비교하기
-// var (옛날 방식) : 다시 만들기 가능 (위험!), 내용 바꾸기 가능, 사용범위 넓음 (전역/함수) 
-// let (요즘 방식) : 다시 만들기 불가능 (안전), 내용 바꾸기 가능, 사용범위 정해진 구역 내 (블럭)
-// const (상수) : 다시 만들기 불가능 (안전), 내용 바꾸기 불가능 (잠긴 상자), 사용범위 정해진 구역 내 (블럭)
+
+    // var (옛날 방식) : 다시 만들기 가능 (위험!), 내용 바꾸기 가능, 사용범위 넓음 (전역/함수) 
+    // let (요즘 방식) : 다시 만들기 불가능 (안전), 내용 바꾸기 가능, 사용범위 정해진 구역 내 (블럭)
+    // const (상수) : 다시 만들기 불가능 (안전), 내용 바꾸기 불가능 (잠긴 상자), 사용범위 정해진 구역 내 (블럭)
 
 // 기본은 const를 쓰고, 나중에 값을 바꿔야 할 때만 let으로 바꾸면 아주 훌륭한 코딩 습관이 됩니다!
 // 의도적으로 변수를 전역으로 만들고 싶지 않다면 var 을 사용하지 말것.
@@ -81,12 +87,13 @@ balance = balance + 200;
 console.log("Hi, " + customer + "! Your new balance is $" + balance + ".");
 
 // 변수 이름 작성 규칙
-// 1. 대소문자 구분 (balance, Balance, BALANCE는 모두 다른 이름)
-// 2. 숫자로 시작 불가 (1stBalance X, firstBalance O)
-// 3. 특수문자 사용 불가 ( _ , $ 만 허용)
-// 4. 공백 사용 불가 (my balance X, my_balance O, myBalance O)
-// 5. 예약어 사용 불가 (let, const, var, if, for, document 등등 X)
-// 6. 의미 있는 이름 사용 권장 (a, b, c 보다는 balance, customer 등등 O)
+
+    // 1. 대소문자 구분 (balance, Balance, BALANCE는 모두 다른 이름)
+    // 2. 숫자로 시작 불가 (1stBalance X, firstBalance O)
+    // 3. 특수문자 사용 불가 ( _ , $ 만 허용)
+    // 4. 공백 사용 불가 (my balance X, my_balance O, myBalance O)
+    // 5. 예약어 사용 불가 (let, const, var, if, for, document 등등 X)
+    // 6. 의미 있는 이름 사용 권장 (a, b, c 보다는 balance, customer 등등 O)
 
 let accountNumber = "I456545"; // 의미 있는 이름 사용
 accountNumber.length; // 7
@@ -126,30 +133,30 @@ console.log(accountNumber); // "PT456545"
 // 재료 (매개변수 Parameter 또는 인자 Argument): () 안에 넣는 숫자나 글자에 따라 결과가 바뀜
 // 결과 (Return Value): 프로퍼티나 메서드를 사용한 후에 얻어지는 값
 
-//  뒤에 ()가 있으면 "이 기능을 실행해!"라는 뜻의 메서드이고, 없으면 "네 정보를 알려줘!"라는 뜻의 프로퍼티라고 이해하세요.
+// 뒤에 ()가 있으면 "이 기능을 실행해!"라는 뜻의 메서드이고, 없으면 "네 정보를 알려줘!"라는 뜻의 프로퍼티라고 이해하세요.
 // 예: .length는 프로퍼티, .slice()는 메서드
 
 // 자주 사용하는 문자열 메서드와 프로퍼티
-// .length 글자 수 문자열의 길이(글자 수) 반환 프로퍼티
-// .slice(n, m) 숫자 2개 n번부터 m번 앞까지 자르기 메서드
-// .repeat(n) 숫자 1개 n번만큼 반복하기 메서드
-// .charAt(n) 숫자 1개 n번째 한 글자만 가져오기 메서드
-// .replace(A, B) 글자 2개 A를 찾아서 B로 바꾸기 메서드
-// .toUpperCase() 모두 대문자로 바꾸기 메서드
-// .toLowerCase() 모두 소문자로 바꾸기 메서드
-// .trim() 앞뒤 공백 제거하기 메서드
+    // .length 글자 수 문자열의 길이(글자 수) 반환 프로퍼티
+    // .slice(n, m) 숫자 2개 n번부터 m번 앞까지 자르기 메서드
+    // .repeat(n) 숫자 1개 n번만큼 반복하기 메서드
+    // .charAt(n) 숫자 1개 n번째 한 글자만 가져오기 메서드
+    // .replace(A, B) 글자 2개 A를 찾아서 B로 바꾸기 메서드
+    // .toUpperCase() 모두 대문자로 바꾸기 메서드
+    // .toLowerCase() 모두 소문자로 바꾸기 메서드
+    // .trim() 앞뒤 공백 제거하기 메서드
 
 // Data Types
-// 1. Primitive Data Types (원시 자료형)
-// - String : 문자, 따옴표로 감싸야 함 ("Hello", 'Hello')
-// - Number : 숫자 (정수, 소수 모두 포함) (100, 3.14)
-// - Boolean : 참/거짓 (true, false)
-// - Null : 값이 없음 (의도적으로 비어있음을 나타낼 때 사용) (null)
-// - Undefined : 값이 정의되지 않음 (변수를 만들고 값을 할당하지 않았을 때 자동으로 부여되는 값) (undefined)
-// - Symbol : 고유한 식별자 (주로 객체의 속성 키로 사용) (Symbol('id'))
+    // 1. Primitive Data Types (원시 자료형)
+    // - String : 문자, 따옴표로 감싸야 함 ("Hello", 'Hello')
+    // - Number : 숫자 (정수, 소수 모두 포함) (100, 3.14)
+    // - Boolean : 참/거짓 (true, false)
+    // - Null : 값이 없음 (의도적으로 비어있음을 나타낼 때 사용) (null)
+    // - Undefined : 값이 정의되지 않음 (변수를 만들고 값을 할당하지 않았을 때 자동으로 부여되는 값) (undefined)
+    // - Symbol : 고유한 식별자 (주로 객체의 속성 키로 사용) (Symbol('id'))
 
 // 2. Non-Primitive Data Types (비원시 자료형)
-// - Object : 여러 값을 하나로 묶는 복합 자료형 (객체, 배열, 함수 등등) ({}, [], function() {})
+    // - Object : 여러 값을 하나로 묶는 복합 자료형 (객체, 배열, 함수 등등) ({}, [], function() {})
 
 // Example:
 const name = "John"; // String
@@ -193,6 +200,7 @@ num2.toString(); // "8" (숫자를 문자열로 변환)
 parseFloat(num1) + parseFloat(num2); // 12 (문자열을 소수로 변환 후 덧셈)
 
 // Array Methods
+
 let array1 = [2,4,6,8];
 // undefined
 array1;
@@ -232,6 +240,7 @@ typeof array1;
 //이는 목록 연산에 최적화된 특수한 유형의 객체이기 때문입니다.
 
 // Object Methods
+
 let student = { name: "John", age: 25 };
 console.log(student.name); // Outputs: John
 console.log(student["age"]); // Outputs: 25
@@ -286,6 +295,7 @@ students
 // 이처럼 객체와 배열을 조합하여 다양한 데이터 구조를 설계할 수 있습니다.
 
 // Boolean Data Type
+
 // Boolean : 참/거짓 (true, false)이라는 두가지 값으로 구성되며, 소문자로 표기됩니다.
 num1 = 8;
 num2 = 10;
@@ -307,6 +317,7 @@ num1 !== num2; // true (값 또는 타입이 다르면 true)
 // 복잡한 조건을 평가하는 데도 활용됩니다.
 
 //null vs undefined Data Type
+
 let customer;
 console.log(customer); // undefined
 
