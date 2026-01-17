@@ -192,3 +192,145 @@ num2.toString(); // "8" (숫자를 문자열로 변환)
 
 parseFloat(num1) + parseFloat(num2); // 12 (문자열을 소수로 변환 후 덧셈)
 
+// Array Methods
+let array1 = [2,4,6,8];
+// undefined
+array1;
+// (4) [2, 4, 6, 8]
+// 0: 2
+// 1: 4
+// 2: 6
+// 3: 8
+// length: 4
+array1.length;
+// 4
+array1[0];
+// 2
+array1[array1.length - 1];
+// 8
+array1.push(10);
+5
+array1;
+// (5) [2, 4, 6, 8, 10]
+array1.unshift(0);
+// 6
+array1;
+// (6) [0, 2, 4, 6, 8, 10]
+array2 = [12, 14, 16];
+// (3) [12, 14, 16]
+array1.concat(array2);
+// (9) [0, 2, 4, 6, 8, 10, 12, 14, 16]
+typeof array1;
+// "object"
+
+
+// Array(배열)은 모든 유형의 요소(숫자, 문자열, 객체 등)를 저장할 수 있으며 다음과 같은 조작 메서드를 제공합니다. 
+// push() 및 pop() 항목을 추가하거나 제거하는 메서드를 제공합니다. 
+// 배열의 길이는 항목이 추가되거나 제거됨에 따라 동적으로 변경될 수 있습니다.
+
+//자바스크립트에서 배열은 기술적으로 객체입니다. 
+//이는 목록 연산에 최적화된 특수한 유형의 객체이기 때문입니다.
+
+// Object Methods
+let student = { name: "John", age: 25 };
+console.log(student.name); // Outputs: John
+console.log(student["age"]); // Outputs: 25
+
+skyStudent = {
+    "name" : "John",
+    "yearOfBirth" : 1980,
+    "country" : "Italy"
+};
+
+skyStudent.name; // "John"
+skyStudent["yearOfBirth"]; // 1980
+
+// 객체는 키-값 쌍의 집합으로, 각 키(속성)는 문자열(또는 심볼)이며 
+// 그 값은 어떤 데이터 유형이든 될 수 있습니다.
+// 객체의 속성에 접근하려면 점 표기법(student.name)이나 
+// 대괄호 표기법(student["age"])을 사용할 수 있습니다.
+
+// 객체는 이름과 나이를 가진 학생처럼 다양한 속성을 가진 개체를 표현하는 데 이상적입니다.
+// 객체는 배열과 달리 항목의 순서를 유지하지 않으며, 속성에 내재된 순서가 존재하지 않습니다.
+// 항목의 순서가 중요한 목록을 다룰 때는 배열을 사용하고, 
+// 키-값 쌍으로 구성된 무순서 관련 데이터 집합을 저장해야 할 때는 객체를 사용하세요. 
+// 이러한 차이점을 이해하면 애플리케이션 요구사항에 따라 적절한 데이터 구조를 선택할 수 있습니다. 
+
+skyStudent.id = "88b5"; // 새로운 속성 추가
+skyStudent.name = "John Doe"; // 기존 속성 값 변경
+delete skyStudent.country; // 속성 삭제
+// 객체는 동적으로 속성을 추가, 수정 및 삭제할 수 있습니다.
+console.log(skyStudent);
+// {name: "John Doe", yearOfBirth: 1980, id: "88b5"}
+
+student1 = { name: "Alice", age: 22 };
+student2 = { name: "Bob", age: 24 };
+
+students = [student1, student2];
+students.length; // 2
+
+student3 = { name: "Charlie", age: 23 };
+students.push(student3);
+students
+// (3) [{…}, {…}, {…}]
+// 0: {name: "Alice", age: 22}
+// 1: {name: "Bob", age: 24}
+// 2: {name: "Charlie", age: 23}
+// length: 3
+
+// 객체는 배열 내에 포함될 수 있으며, 
+// 배열은 객체 내에 포함될 수 있습니다. 
+// 이러한 중첩 구조는 복잡한 데이터 모델을 표현하는 데 유용합니다. 
+// 예를 들어, 학생 객체의 배열을 만들어 여러 학생의 정보를 관리할 수 있습니다. 
+// 각 학생 객체는 이름과 나이와 같은 속성을 가질 수 있습니다. 
+// 이처럼 객체와 배열을 조합하여 다양한 데이터 구조를 설계할 수 있습니다.
+
+// Boolean Data Type
+// Boolean : 참/거짓 (true, false)이라는 두가지 값으로 구성되며, 소문자로 표기됩니다.
+num1 = 8;
+num2 = 10;
+num1 > num2; // false
+num1 < num2; // true
+num1 == num2; // false
+num1 != num2; // true
+
+num2 = "8";
+num1 == num2; // true (값만 비교, 타입은 무시)
+num1 === num2; // false (값과 타입 모두 비교)
+num1 !== num2; // true (값 또는 타입이 다르면 true)
+
+// Boolean 값은 조건문과 반복문에서 주로 사용되며,
+// 프로그램의 흐름을 제어하는 데 중요한 역할을 합니다. 
+// 예를 들어, 특정 조건이 참일 때만 코드를 실행하거나,
+// 반복문에서 특정 조건이 만족될 때까지 반복을 계속할 수 있습니다. 
+// Boolean 값은 논리 연산자(AND, OR, NOT)와 함께 사용되어 
+// 복잡한 조건을 평가하는 데도 활용됩니다.
+
+//null vs undefined Data Type
+let customer;
+console.log(customer); // undefined
+
+customer = { name: "Emma" };
+console.log(customer.age); // undefined
+
+customer = null;
+console.log(customer); // null
+
+// null은 개발자가 의도적으로 "값이 없음"을 나타내기 위해 할당하는 값입니다.
+// 반면에 undefined는 변수가 선언되었지만 아직 값이 할당되지 않았거나,
+// 객체의 속성이 존재하지 않을 때 자동으로 부여되는 값입니다.
+// null은 명시적으로 값을 비우는 데 사용되고, 
+// undefined는 변수나 속성이 아직 초기화되지 않았음을 나타냅니다.
+
+null == undefined; // true (값만 비교)
+null === undefined; // false (값과 타입 모두 비교)
+null != undefined; // false (값만 비교)
+null !== undefined; // true (값 또는 타입이 다르면 true)
+
+typeof null; // "object" (자바스크립트의 오래된 버그)
+typeof undefined; // "undefined"
+
+// null과 undefined는 모두 "값이 없음"을 나타내지만,
+// null은 개발자가 명시적으로 할당하는 값이고,
+// undefined는 자바스크립트 엔진이 자동으로 부여하는 값입니다. 
+// 이 둘을 구분하여 사용하는 것이 중요합니다.
