@@ -26,9 +26,20 @@ document.querySelector("#greeting").innerHTML = greetingText;
 document.querySelector("p#weather").innerHTML = celsiusText;
 
 document.querySelector(".weather-group").addEventListener("click", function(event) {
+
     if (event.target.id == "celsius") {
         document.querySelector("p#weather").innerHTML = celsiusText;
     } else if (event.target.id == "fahr") {
         document.querySelector("p#weather").innerHTML = fahrText;
     } 
+
 });
+
+setInterval(function() {
+    let localTime = new Date();
+    document.querySelector("span[data-time=hours]").textContent = localTime.getHours().toString().padStart(2, '0');
+    document.querySelector("span[data-time=minutes]").textContent = localTime.getMinutes().toString().padStart(2, '0');
+    document.querySelector("span[data-time=seconds]").textContent = localTime.getSeconds().toString().padStart(2, '0');
+}, 1000);
+
+
